@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>María Del Mar Chaves · Psicóloga sanitaria</title>
+<meta name="description" content="Terapia psicológica individual y de pareja, online y presencial. Reserva tu primera consulta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff6ec;--surface:#FDFAF5;color-scheme:light;--ink:#2B2040;--muted:#6B5D7C;--accent:#7A61B2;--accent-ink:#f3e1f2;--soft:#e8c4ef;--line:#e9e3d1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background-color:#f8f5f2;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:400;line-height:1.15;margin:0 0 .6em;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4.2rem)}h2{font-size:clamp(1.8rem,4vw,2.6rem)}h3{font-size:1.4rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+.logo{text-decoration:none;line-height:1.1;color:var(--ink)}.logo b{display:block;font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(1.7rem,4.5vw,2.4rem);letter-spacing:-.01em}.logo small{display:block;margin-top:.3rem;font-size:.95rem;color:var(--accent);font-weight:600}
+nav{display:flex;gap:1.4rem;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-weight:500}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.85rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:600;border:0;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center;padding:4rem 0 5rem}
+.hero .lead{font-size:1.2rem;color:var(--muted)}
+.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}
+.breath{position:relative;aspect-ratio:1;max-width:340px;margin:0 auto;width:100%;display:grid;place-items:center}
+.breath i{position:absolute;border-radius:50%;background:var(--soft);animation:breathe 10s ease-in-out infinite}
+.breath i:nth-child(1){inset:0;opacity:.45}.breath i:nth-child(2){inset:14%;opacity:.7;animation-delay:.4s}.breath i:nth-child(3){inset:30%;background:var(--accent);opacity:.9;animation-delay:.8s}
+.breath span{position:relative;z-index:1;color:var(--accent-ink);font-family:Newsreader,serif;font-size:1.3rem;text-align:center;animation:label 10s ease-in-out infinite}
+.breath span::before{content:"Inspira"}
+@media (prefers-reduced-motion:reduce){.breath i,.breath span{animation:none}.breath span{opacity:1}.breath span::before{content:"Respira"}html{scroll-behavior:auto}}
+section{padding:4.5rem 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:2rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.6rem}
+.card p{color:var(--muted);margin:0}
+.price{display:block;margin-top:1rem;font-weight:600;color:var(--accent)}
+.about{display:grid;grid-template-columns:.7fr 1.3fr;gap:3rem;align-items:start}
+.portrait{aspect-ratio:4/5;border-radius:200px 200px 18px 18px;background:linear-gradient(160deg,#F4C6D3,#A38BD6);display:grid;place-items:center;color:var(--accent-ink);font-family:Newsreader,serif;font-size:4rem}
+.facts{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem;color:var(--muted)}
+.facts li::before{content:"–  ";color:var(--accent)}
+.steps{counter-reset:s;display:grid;gap:1.25rem;margin-top:2rem;padding:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.6rem 1fr;gap:1rem}
+.steps li::before{content:counter(s);width:2.6rem;height:2.6rem;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-family:Newsreader,serif;font-size:1.2rem}
+.steps b{display:block}.steps span{color:var(--muted)}
+form{display:grid;gap:1rem;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.75rem;margin-top:2rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{display:grid;gap:.35rem;font-weight:500;font-size:.95rem}
+input,select,textarea{font:inherit;padding:.75rem .9rem;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.check{display:flex;gap:.7rem;align-items:flex-start;font-weight:400;font-size:.9rem;color:var(--muted)}
+.check input{width:auto;margin-top:.3rem}
+#ok{display:none;background:var(--soft);padding:1rem 1.2rem;border-radius:12px}
+.crisis{background:var(--soft);border-radius:14px;padding:1rem 1.25rem;margin-top:2rem;font-size:.95rem}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{margin-right:1rem}
+@media(max-width:780px){.hero,.about,.row{grid-template-columns:1fr}.hero{padding:2rem 0 3rem}.breath{max-width:240px;order:-1}.portrait{max-width:260px}}
+.hero-img{display:block;width:100%;max-width:380px;aspect-ratio:4/5;object-fit:cover;margin:0 auto;border-radius:200px 200px 18px 18px}
+@media(max-width:780px){.hero-img{max-width:260px;order:-1}}
+.links{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:1rem;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.2rem 1.5rem;text-decoration:none}
+.links a:hover{border-color:var(--accent)}
+.links b{display:block;font-family:Newsreader,Georgia,serif;font-weight:500;font-size:1.25rem}
+.links span{color:var(--muted);font-size:.95rem}
+.links em{font-style:normal;color:var(--accent);font-weight:600;white-space:nowrap}
+.doc{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;background:var(--surface);border:1px solid var(--accent);border-radius:18px;padding:1.6rem;margin-top:2rem}
+.doc h3{margin:0 0 .3rem}.doc p{margin:0;color:var(--muted)}
+.or{margin:1.75rem 0 0;color:var(--muted);font-weight:500}
+.doc-widget{flex:1 1 100%;min-width:0;overflow-x:auto}
+.doc-widget:empty{display:none}
+.links .av{position:relative;flex:none;width:56px;height:56px;border-radius:50%;overflow:hidden;background:linear-gradient(160deg,#F4C6D3,#A38BD6);display:grid;place-items:center;color:#fff;font-weight:600}
+.links .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.links .txt{flex:1}
+nav a.wa{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#25D366;color:#fff}
+nav a.wa:hover{color:#fff;filter:brightness(1.08)}
+nav a.wa svg{width:22px;height:22px;fill:currentColor}
+.wa-float{position:fixed;right:1.25rem;bottom:calc(1.25rem + env(safe-area-inset-bottom,0px));z-index:50;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(43,32,64,.28);transition:transform .2s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px;fill:currentColor}
+@media(prefers-reduced-motion:reduce){.wa-float{transition:none}}
+.legal{padding:3rem 0 4rem}.legal h1{font-size:clamp(2rem,5vw,3rem)}.legal h2{font-size:1.5rem;margin-top:2rem}.legal p,.legal li{max-width:70ch}.legal a:not(.back){color:var(--accent)}.legal ol,.legal ul{padding-left:1.4rem}.legal li{margin-bottom:.5rem}.back{display:inline-block;margin-bottom:1.5rem;color:var(--accent);font-weight:600;text-decoration:none}
+#acc{display:none}body.solo-acc #acc{display:block}body.solo-acc main#top{display:none}
+.menu-list{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:.2rem}.menu-list a{display:inline-block;padding:.45rem 0;text-decoration:none;color:var(--muted);font-weight:500;font-size:1.1rem}.menu-list a:hover{color:var(--ink)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.contact-list{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:1rem}
+.contact-list a{display:flex;gap:.8rem;align-items:flex-start;text-decoration:none;color:var(--muted);font-weight:500}
+.contact-list a:hover{color:var(--ink)}
+.contact-list svg{flex:none;width:22px;height:22px;margin-top:.15rem;color:var(--accent)}
+.contact-list svg.line{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contact-list svg.fill{fill:currentColor}
+@media(max-width:780px){.cols{grid-template-columns:1fr;gap:2.5rem}}
+.portrait{overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.links .av img{object-position:50% 22%}
+.doc-t{display:flex;align-items:center;gap:1rem}
+.doc-av{flex:none;width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:50% 22%}
+.logo img{display:block;height:auto;width:clamp(190px,30vw,290px)}
+.hero{padding:3.5rem 0 5rem}
+.banner-foto{display:block;width:100vw;margin-left:calc(50% - 50vw)}
+.banner-foto img{display:block;width:100%;height:clamp(200px,34vw,480px);object-fit:cover;object-position:50% 45%}
+html,body{overflow-x:clip}
+@media(max-width:780px){.hero{padding:2rem 0 3rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#top"><img src="imagenes/logo.png" alt="María del Mar Chaves, psicóloga sanitaria, nº de colegiada AN 11624"></a>
+<nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#sobre-mi">Sobre mí</a><a href="#proceso">Cómo funciona</a><a href="#enlaces">Enlaces</a><a href="#reservar">Reservar</a><a class="wa" href="https://wa.me/34614153916?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp" title="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></nav>
+</header>
+
+<main id="top">
+<div class="banner-foto"><img src="imagenes/fondo-portada.jpg" alt="Interior de la consulta: sillones, mesa auxiliar con pañuelos y plantas"></div>
+<div class="hero">
+<div>
+<h1>Un espacio para entenderte y avanzar a tu ritmo</h1>
+<p class="lead">Terapia psicológica para adultos, niños y parejas, online o presencial. Empezamos con una primera consulta para conocernos y ver si encajamos.</p>
+<div class="actions"><a class="btn" href="#reservar">Reservar primera consulta</a><a class="btn ghost" href="#servicios">Ver servicios</a></div>
+</div>
+<img class="hero-img" src="imagenes/imagen%20pagina%20web.jpeg" alt="Descripción breve de la imagen">
+</div>
+
+<section id="servicios">
+<h2>Servicios</h2>
+<p>Sesiones de 60 minutos, por videollamada o en consulta. La confidencialidad está garantizada en todos los casos.</p>
+<div class="grid">
+<article class="card"><h3>Primera consulta</h3><p>Hablamos de lo que te trae aquí, aclaramos dudas y definimos objetivos. Sin compromiso de continuar.</p><span class="price">15 min · gratuita</span></article>
+<article class="card"><h3>Terapia individual</h3><p>Ansiedad, Depresión, duelo, autoestima, Fobias, estrés laboral ,TCA, TDA...</p><span class="price">60 min · 60 €</span></article>
+<article class="card"><h3>Terapia de pareja</h3><p>Mejorar la comunicación, resolver conflictos y reconstruir la confianza...</p><span class="price">60 min · 70 €</span></article>
+</div>
+</section>
+
+<section id="sobre-mi">
+<div class="about">
+<div class="portrait"><img src="imagenes/doctoralia.jpg" alt="Retrato de María del Mar sonriendo, sentada en su consulta"></div>
+<div>
+<h2>Sobre mí</h2>
+<p>Soy psicóloga sanitaria y trabajo desde un enfoque cognitivo-conductual con elementos de terapia de aceptación y compromiso. Creo en una terapia cercana, sin juicios y con objetivos claros.</p>
+
+<ul class="facts"><li>Psicóloga sanitaria · Nº de colegiada AN11624</li><li>Máster en Psicología General Sanitaria.</li><li>Máster Especialista en Terapia de Pareja, Familia y Mediación.</li></ul>
+</div>
+</div>
+</section>
+
+<section id="proceso">
+<h2>Cómo funciona</h2>
+<ol class="steps">
+<li><div><b>Pides tu primera consulta</b><span>Rellenas el formulario y te respondo en menos de 24 horas.</span></div></li>
+<li><div><b>Nos conocemos</b><span>Una conversación para entender tu situación y decidir juntos cómo trabajar.</span></div></li>
+<li><div><b>Empezamos el proceso</b><span>Sesiones semanales o quincenales, con tareas breves entre sesiones.</span></div></li>
+</ol>
+</section>
+
+<section id="enlaces">
+<h2>Enlaces de interés</h2>
+<p>Otros lugares donde puedes conocer mi trabajo y reservar cita.</p>
+<ul class="links">
+<li><a href="https://www.doctoralia.es/maria-del-mar-chaves-iglesias/psicologo/sevilla" target="_blank" rel="noopener noreferrer"><span class="av" aria-hidden="true">MM<img src="imagenes/doctoralia-circulo.jpg" alt="" onerror="this.remove()"></span><div class="txt"><b>Perfil en Doctoralia</b><span>Opiniones de pacientes y reserva de cita online</span></div><em>Abrir</em></a></li>
+<li><a href="https://www.instagram.com/psico_mmar" target="_blank" rel="noopener noreferrer"><span class="av" aria-hidden="true">MM<img src="imagenes/instagram.jpg" alt="" onerror="this.remove()"></span><div class="txt"><b>Instagram · @psico_mmar</b><span>Contenido sobre psicología y novedades de la consulta</span></div><em>Abrir</em></a></li>
+</ul>
+</section>
+
+<section id="reservar">
+<h2>Reserva tu primera consulta</h2>
+<p>Puedes elegir día y hora directamente en mi calendario de Doctoralia o enviarme tu solicitud por el formulario.</p>
+<div class="doc">
+<div class="doc-t"><img class="doc-av" src="imagenes/doctoralia-circulo.jpg" alt="" onerror="this.remove()"><div><h3>Reserva en mi calendario de Doctoralia</h3></div></div>
+
+<a id="zl-url" class="zl-url" href="https://www.doctoralia.es/maria-del-mar-chaves-iglesias/psicologo/sevilla" rel="nofollow" data-zlw-doctor="maria-del-mar-chaves-iglesias" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="Widget de reserva de citas médicas">Reserve una cita</a>
+<script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
+<p class="or">O envíame tu solicitud y te confirmaré una cita por correo:</p>
+<form id="f" novalidate>
+<div class="row">
+<label>Nombre<input name="nombre" required autocomplete="name"></label>
+<label>Correo electrónico<input name="email" type="email" required autocomplete="email"></label>
+</div>
+<div class="row">
+<label>Servicio<select name="servicio"><option>Primera consulta</option><option>Terapia individual</option><option>Terapia de pareja</option></select></label>
+<label>Modalidad<select name="modalidad"><option>Online</option><option>Presencial</option></select></label>
+</div>
+<label>Franja horaria preferida<select name="franja"><option>Mañanas</option><option>Tardes</option><option>Indiferente</option></select></label>
+<label>¿Quieres contarme algo? (opcional)<textarea name="mensaje" rows="3"></textarea></label>
+<label class="check"><input type="checkbox" name="rgpd" required> Acepto la política de privacidad y el tratamiento de mis datos para gestionar mi solicitud.</label>
+<p id="err" role="alert" style="color:#B3261E;margin:0;display:none">Completa nombre, correo y acepta la política de privacidad.</p>
+<button class="btn" type="submit">Enviar solicitud</button>
+<p id="ok" role="status">Se ha abierto tu programa de correo con la solicitud lista. Envíala para completar la reserva.</p>
+</form>
+<div class="crisis"><b>Si estás en una situación de crisis</b>, no esperes a una cita: llama al 024 (línea de atención a la conducta suicida, 24 h, gratuita en España) o al 112 en caso de emergencia.</div>
+</section>
+<section id="menu">
+<div class="cols">
+<div>
+<h2>Menú</h2>
+<nav aria-label="Menú inferior">
+<ul class="menu-list">
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#sobre-mi">Sobre mí</a></li>
+<li><a href="#proceso">Cómo funciona</a></li>
+<li><a href="#enlaces">Enlaces</a></li>
+<li><a href="#reservar">Reservar</a></li>
+</ul>
+</nav>
+</div>
+<div>
+<h2>Contactar</h2>
+<ul class="contact-list">
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Averroes+6+Edificio+Eurosevilla+Sevilla+41020" target="_blank" rel="noopener noreferrer"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Av. Averroes, 6, planta 1 puerta 12 Edificio Eurosevilla, Sevilla 41020</span></a></li>
+<li><a href="mailto:mariadelmarchavespsico@gmail.com"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>mariadelmarchavespsico@gmail.com</span></a></li>
+<li><a href="https://wa.me/34614153916" target="_blank" rel="noopener noreferrer"><svg class="fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>+34 614 153 916</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<main id="acc" class="legal">
+<a class="back" href="#top">← Volver a la web</a>
+<h1>Declaración de accesibilidad</h1>
+
+<p>La entidad María del Mar Cháves Iglesias se ha comprometido a hacer accesible su sitio web de conformidad con el <a href="http://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699" target="_blank" rel="noopener noreferrer">Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.</a></p>
+<p>La presente declaración de accesibilidad se aplica a este sitio web, que no tiene ninguna web asociada, excluyendo los contenidos incrustados provenientes de otros dominios.</p>
+
+<h2>Situación de cumplimiento</h2>
+<p>Este sitio web es parcialmente conforme con el RD 1112/2018 debido a las excepciones y a la falta de conformidad de los aspectos que se indican a continuación.</p>
+
+<h2>Contenido no accesible</h2>
+<p>El contenido que se recoge a continuación no es accesible por lo siguiente:</p>
+<ol>
+<li>Puede existir algunas alternativas textuales que no sean correctas – Requisito número 9.1.1.1 Contenido no textual de UNE-EN 301549:2022</li>
+<li>Pueden existir algunos enlaces cuya función u objetivo no estén correctamente definidos – Requisito número 9.2.4.4 Propósito de los enlaces de UNE-EN 301549:2022</li>
+<li>Podrían existir fallos puntuales de edición en alguna página web.</li>
+<li>Carga desproporcionada: No resulta aplicable.</li>
+<li>El contenido no entra dentro del ámbito de la legislación aplicable.</li>
+<li>Podrían existir archivos ofimáticos en PDF u otros formatos publicados antes del 20 de septiembre de 2018 que no cumplan en su totalidad todos los requisitos de accesibilidad.</li>
+<li>Puede haber contenidos de terceros que no estén desarrollados en esta Unidad, ni bajo su control, como archivos ofimáticos de diferentes entidades que deban publicarse en este sitio.</li>
+</ol>
+
+<h2>Preparación de la presente declaración de accesibilidad</h2>
+<p>La presente declaración fue preparada el 31/10/2024.</p>
+<p>El método empleado para preparar la declaración ha sido una autoevaluación llevada a cabo por la propia entidad.</p>
+<p>Última revisión de la declaración: 15/10/2025.</p>
+
+<h2>Observaciones y datos de contacto</h2>
+<p>Puede realizar comunicaciones sobre requisitos de accesibilidad (artículo 10.2.a) del RD 1112/2018) como por ejemplo:</p>
+<ul>
+<li>informar sobre cualquier posible incumplimiento por parte de este sitio web</li>
+<li>transmitir otras dificultades de acceso al contenido</li>
+<li>formular cualquier otra consulta o sugerencia de mejora relativa a la accesibilidad del sitio web</li>
+</ul>
+<p>A través del siguiente <a href="#reservar">formulario de contacto.</a></p>
+<p>Puede presentar:</p>
+<ul>
+<li>una Queja relativa al cumplimiento de los requisitos del RD 1112/2018 o</li>
+<li>una Solicitud de Información accesible relativa a:
+<ul>
+<li>contenidos que están excluidos del ámbito de aplicación del RD 1112/2018 según lo establecido por el artículo 3, apartado 4</li>
+<li>contenidos que están exentos del cumplimiento de los requisitos de accesibilidad por imponer una carga desproporcionada.</li>
+</ul></li>
+</ul>
+<p>En la Solicitud de información accesible, se debe concretar, con toda claridad, los hechos, razones y petición que permitan constatar que se trata de una solicitud razonable y legítima.</p>
+
+<h2>Contenido opcional</h2>
+<p>Este sitio web aplica los requisitos de la Norma UNE-EN 301549:2022 considerando las excepciones del RD 1112/2018.</p>
+<p>La última revisión de la accesibilidad se ha realizado en 15/10/2025.</p>
+<p>El sitio web está optimizado para los navegadores Microsoft Internet Explorer 8.0 o versiones superiores y las últimas versiones vigentes de FireFox, Safari, Opera y Google Chrome. La resolución web mínima recomendada es de 1280×1024.</p>
+<p>El sitio web está diseñado para su visualización Responsive, con lo que se visualiza de forma óptima en los dispositivos tablet y móviles. En estos dispositivos está optimizado para su visualización en las últimas versiones vigentes de Chrome for mobile, Firefox for mobile, Safari mobile, Opera Mini y navegador nativo de Android.</p>
+
+</main>
+
+</div>
+
+<footer>
+<div class="wrap">
+<div>Todos los derechos reservados</div>
+<div>© 2026 María Del Mar Chaves · Psicóloga sanitaria · Nº colegiada AN11624</div>
+</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/34614153916?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp" title="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+e.preventDefault();var d=new FormData(this),err=document.getElementById('err'),ok=document.getElementById('ok');
+if(!d.get('nombre')||!/\S+@\S+\.\S+/.test(d.get('email')||'')||!d.get('rgpd')){err.style.display='block';ok.style.display='none';return}
+err.style.display='none';
+var body='Nombre: '+d.get('nombre')+'\nCorreo: '+d.get('email')+'\nServicio: '+d.get('servicio')+'\nModalidad: '+d.get('modalidad')+'\nFranja: '+d.get('franja')+'\n\n'+(d.get('mensaje')||'');
+ok.style.display='block';
+location.href='mailto:mariadelmarchavespsico@gmail.com?subject='+encodeURIComponent('Solicitud de primera consulta')+'&body='+encodeURIComponent(body);
+});
+</script>
+<script>
+(function(){var t=document.title;function r(){var a=location.hash==='#accesibilidad';document.body.classList.toggle('solo-acc',a);document.title=a?'Declaración de accesibilidad · María Del Mar Chaves':t;if(a){window.scrollTo(0,0)}else if(location.hash.length>1){var el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView()}}window.addEventListener('hashchange',r);r()})();
+</script>
+</body>
+</html>
